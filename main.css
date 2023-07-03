@@ -52,6 +52,14 @@ body {
     left: 50%;
     transform: translateX(-50%);
   }
+
+  #roundNumber {
+    display: block;
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+  }
   
   @media (max-width: 400px) {
     .center {
