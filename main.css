@@ -1,0 +1,42 @@
+.panel {
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+.bottom-right-panel {
+    border-bottom-right-radius: 200px;
+    background-color: red;
+}
+
+.bottom-left-panel {
+    border-bottom-left-radius: 200px;
+    background-color: blue;
+}
+
+.top-right-panel {
+    border-top-right-radius: 200px;
+    background-color: green;
+}
+
+.top-left-panel {
+    border-top-left-radius: 200px;
+    background-color: yellow;
+}
+
+.red {
+    
+}
+
+.green {
+    background-color: green;
+
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
