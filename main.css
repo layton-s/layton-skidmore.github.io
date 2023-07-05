@@ -50,7 +50,7 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 100%;
-    top: 115px;
+    top: 105px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -66,10 +66,6 @@ body {
     2px -2px 4px blue,
     -2px 2px 4px yellow;
 }
-
-
-
- 
 
   #roundNumber {
     display: block;
