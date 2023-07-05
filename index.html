@@ -5,29 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script defer src="main.js"></script>
-    <link rel ="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
-        <div onclick="panelClicked(event.currentTarget)" class = 'panel top-left-panel'></div>
-        <div onclick="panelClicked(event.currentTarget)" class = 'panel top-right-panel'></div>
+    <div class="panel-row">
+        <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel top-right-panel"></div>
     </div>
-    <div>
-        <div onclick="panelClicked(event.currentTarget)" class = 'panel bottom-left-panel'></div>
-        <div onclick="panelClicked(event.currentTarget)" class = 'panel bottom-right-panel'></div>
-        
+    <div class="panel-row">
+        <div onclick="panelClicked(event.currentTarget)" class="panel bottom-left-panel"></div>
+        <div onclick="panelClicked(event.currentTarget)" class="panel bottom-right-panel"></div>
     </div>
     <div class="center"></div>
     <div>
-        <span id ="roundNumber">Round 1</span>
+        <span id="roundNumber">Round 1</span>
     </div>
-    <button id="startButton" onclick ="startGame()">Start Game!</button>
+    <button id="startButton" onclick="startGame()">Start Game!</button>
     <button id="playAgainButton" onclick="resetGame()">Play Again!</button>
-    
-
-
-
-
-    
 </body>
 </html>
