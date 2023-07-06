@@ -4,7 +4,7 @@ Simon is a classic memory game built with HTML, CSS, and JavaScript. The game pr
 
 ## Demo
 
-You can play the game live by accessing the following link: https://layton-skidmore.github.io/
+You can play the game live by accessing the following link: https://layton-skidmore.github.io/. See if you can reach level 15!
 
 
 ## Gameplay
@@ -26,11 +26,10 @@ You can play the game live by accessing the following link: https://layton-skidm
 - Start and play again buttons for easy game control.
 
 ## Icebox Features
-
-- More sound effects
-- A message that lets the user know when its their turn and when its the computer's turn
 - A new and improved gameboard thats more visually appealing
 - More immersive "flashing" feature as opposed to flashing pure white.
+- Higher quality sound FX
+
 
 
 ## Technologies Used

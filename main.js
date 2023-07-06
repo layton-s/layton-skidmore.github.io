@@ -17,7 +17,6 @@ const sequence = [];
 let sequenceToGuess = [];
 let canClick = false;
 let currentRound = 1;
-
 playAgainButton.style.display = 'none';
 youWin.style.display = 'none';
 youLose.style.display = 'none';
@@ -73,7 +72,7 @@ function panelClicked(panel) {
     const expectedPanel = sequenceToGuess.shift(); // Get the expected panel from the sequence to guess
     if (expectedPanel === panel) { // Check if the clicked panel matches the expected panel
       if (sequenceToGuess.length === 0) { // Check if the entire sequence has been guessed
-        if (currentRound === 15) { // Check if it's the final round of the game
+        if (currentRound === 4) { // Check if it's the final round of the game
           endGame(true); // End the game with a win
           return;
         }

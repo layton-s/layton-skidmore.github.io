@@ -1,7 +1,7 @@
 body {
     background-color: black;
     text-align: center;
-    margin-top: 30px;
+    margin-top: 100px;
     position: relative;
   }
   
@@ -38,7 +38,7 @@ body {
   }
   
   .active {
-    background-color: white;
+    opacity: 0.5;
   }
   
   .center {
@@ -97,8 +97,6 @@ body {
     margin-top: 20px; 
     text-shadow: 0 0 3px #FF0000;
 }
-
-
 
   #playAgainButton,
   #startbutton {
