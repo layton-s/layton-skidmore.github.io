@@ -8,6 +8,9 @@ const playAgainButton = document.getElementById('playAgainButton');
 const youWin = document.querySelector('h1');
 const youLose = document.querySelector('h2');
 const soundEffect = new Audio('https://www.soundjay.com/buttons/sounds/button-3.mp3');
+const soundEffect2 = new Audio('https://www.soundjay.com/buttons/sounds/button-6.mp3');
+const soundEffect3 = new Audio('https://www.soundjay.com/buttons/sounds/button-09a.mp3');
+const soundEffect4 = new Audio('https://www.soundjay.com/buttons/sounds/button-11.mp3');
 
 const panels = [topLeft, bottomRight, bottomLeft, topRight];
 const sequence = [];
@@ -22,14 +25,25 @@ youLose.style.display = 'none';
 function getRandomPanel() {
   return panels[Math.floor(Math.random() * panels.length)];
 }
+function playSoundEffect(panel) {
+    if (panel === topLeft) {
+      soundEffect.play();
+    } else if (panel === topRight) {
+      soundEffect2.play();
+    } else if (panel === bottomLeft) {
+      soundEffect3.play();
+    } else if (panel === bottomRight) {
+      soundEffect4.play();
+    }
+  }
 
-async function startFlashing() {
+async function computerSequence() {
     canClick = false; // Disable clicking temporarily
     const sequenceLength = sequence.length; // Get the length of the sequence
     for (let i = 0; i < sequenceLength; i++) {
       const panel = sequence[i]; // Get the panel at the current index
       panel.classList.add('active'); // Add the 'active' class to the panel
-      soundEffect.play(); // Play the sound effect
+      playSoundEffect(panel); // Play the sound effect
       await new Promise(function (resolve) {
         setTimeout(function () {
           resolve();
@@ -47,7 +61,7 @@ async function startFlashing() {
 
 function userFlash(panel) {
   panel.classList.add('active');
-  soundEffect.play();
+  playSoundEffect(panel);
   setTimeout(function () {
     panel.classList.remove('active');
   }, 500);
@@ -59,7 +73,7 @@ function panelClicked(panel) {
     const expectedPanel = sequenceToGuess.shift(); // Get the expected panel from the sequence to guess
     if (expectedPanel === panel) { // Check if the clicked panel matches the expected panel
       if (sequenceToGuess.length === 0) { // Check if the entire sequence has been guessed
-        if (currentRound === 4) { // Check if it's the final round of the game
+        if (currentRound === 15) { // Check if it's the final round of the game
           endGame(true); // End the game with a win
           return;
         }
@@ -69,7 +83,7 @@ function panelClicked(panel) {
           sequenceToGuess = [...sequence]; // Update the sequence to guess with the new sequence
           currentRound++; // Increment the current round counter
           roundElement.textContent = `Round ${currentRound}`; // Update the round display element with the current round number
-          startFlashing(); // Start flashing the new sequence
+          computerSequence(); // Start flashing the new sequence
           canClick = true; // Allow clicking again
         }, 1500);
       }
@@ -86,7 +100,7 @@ function startGame() {
   sequence.push(getRandomPanel());
   sequenceToGuess = [...sequence];
   roundElement.textContent = `Round ${currentRound}`;
-  setTimeout(startFlashing, 1000);
+  setTimeout(computerSequence, 1000);
   canClick = true;
 }
 
@@ -113,7 +127,7 @@ function resetGame() {
   setTimeout(function () {
     sequence.push(getRandomPanel());
     sequenceToGuess = [...sequence];
-    startFlashing();
+    computerSequence();
     canClick = true;
   }, 1000);
 }

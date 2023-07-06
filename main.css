@@ -89,7 +89,7 @@ body {
 
      
 }
-    h2 {
+   h2 {
     display: block;
     font-size: 100 px;
     color: white;
@@ -97,6 +97,8 @@ body {
     margin-top: 20px; 
     text-shadow: 0 0 3px #FF0000;
 }
+
+
 
   #playAgainButton,
   #startbutton {
