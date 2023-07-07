@@ -50,7 +50,7 @@ body {
     height: 200px;
     background-color: black;
     border-radius: 100%;
-    top: 105px;
+    top: 210px;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -107,3 +107,7 @@ body {
     transform: translateX(-50%);
   }
 
+#main_graphic {
+    height: 100px;
+    width: 500px;
+}

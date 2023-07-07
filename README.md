@@ -1,5 +1,7 @@
 # Simon Says!
 
+![logo](SimonSays.png)
+
 Simon is a classic memory game built with HTML, CSS, and JavaScript. The game presents a sequence of colored panels to the player, who must then repeat the sequence correctly to advance to the next round. The goal is to see how far the player can go without making a mistake.
 
 ## Demo
@@ -26,9 +28,10 @@ You can play the game live by accessing the following link: https://layton-skidm
 - Start and play again buttons for easy game control.
 
 ## Icebox Features
-- A new and improved gameboard thats more visually appealing
-- More immersive "flashing" feature as opposed to flashing pure white.
+- A stylish message that lets the user know when its their turn vs the computer's turn.
+- Stylish Start Game/Play Again buttons that fit the theme.
 - Higher quality sound FX
+- Better quality panels that fit the neon theme.
 
 
 
