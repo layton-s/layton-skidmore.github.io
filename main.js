@@ -42,7 +42,6 @@ function userFlash(panel) {
   }, 500);
 }
 
-
 function startGame() {
   startButton.style.display = 'none';
   playAgainButton.style.display = 'none';
@@ -86,10 +85,8 @@ function panelClicked(panel) {
   userFlash(panel);
   const expectedPanel = sequenceToGuess.shift(); // Get the expected panel from the sequence to guess
   if (expectedPanel === panel) {
-    if (sequenceToGuess.length === 0) {
-      // Check if the entire sequence has been guessed
-      if (currentRound === 4) {
-        // Check if it's the final round of the game
+    if (sequenceToGuess.length === 0) {// Check if the entire sequence has been guessed
+      if (currentRound === 4) { // Check if it's the final round of the game
         endGame(true);
         return;
       }
