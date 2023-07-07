@@ -62,11 +62,11 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold; 
     text-shadow: 2px 2px 4px red,
-    -2px -2px 4px lime,
-    2px -2px 4px blue,
-    -2px 2px 4px yellow;
-}
-
+                 -2px -2px 4px lime,
+                 2px -2px 4px blue,
+                 -2px 2px 4px yellow;
+  }
+  
   #roundNumber {
     display: block;
     font-size: 24px;
@@ -74,40 +74,56 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-weight: bold; 
     text-shadow: 2px 2px 4px red,
-    -2px -2px 4px lime,
-    2px -2px 4px blue,
-    -2px 2px 4px yellow;
-}
-
-    h1 { 
-    display: block;
-    font-size: 100 px;
+                 -2px -2px 4px lime,
+                 2px -2px 4px blue,
+                 -2px 2px 4px yellow;
+  }
+  
+  #you_win { 
+    display: none;
+    font-size: 40px;
     color: white;
     text-align: center;
     margin-top: 20px; 
     text-shadow: 0 0 5px #0000FF;
-
-     
-}
-   h2 {
-    display: block;
-    font-size: 100 px;
+  }
+  
+  #you_lose {
+    display: none;
+    font-size: 40px;
     color: white;
     text-align: center;
     margin-top: 20px; 
     text-shadow: 0 0 3px #FF0000;
-}
-
-  #playAgainButton,
-  #startbutton {
+  }
+  
+  #playAgainButton {
     display: none;
+  }
+  
+  #startButton {
+    display: block;
+  }
+  
+  button {
     margin-top: 20px;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-  }
-
-#main_graphic {
+    cursor: pointer;
+    background-color: transparent;
+    border-color:red;
+    border: solid 3px;
+    color: white;
+    text-shadow: 0 0 3px #FF0000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 32px;
+}
+  
+  #main_graphic {
     height: 100px;
     width: 500px;
-}
+  }

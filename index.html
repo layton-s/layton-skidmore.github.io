@@ -13,7 +13,7 @@
    
 </head>
 <body>
-    <img src = "SimonSays.png" id = "main_graphic";>
+    <img src="SimonSays.png" id="main_graphic";>
     
     <div class="panel-row">
         <div onclick="panelClicked(event.currentTarget)" class="panel top-left-panel"></div>
@@ -30,11 +30,11 @@
         <span id="roundNumber">Round 1</span>
     </div>
     <div class ='resultMessages'>
-        <h1>You win!</h1>
-        <h2>Game over!</h2>
+        <h1 id="you_win">You win!</h1>
+        <h2 id="you_lose">Game over!</h2>
    </div>
    
     <button id="startButton" onclick="startGame()">Start Game!</button>
-    <button id="playAgainButton" onclick="resetGame()">Play Again!</button>
+    <button id="playAgainButton" onclick="startGame()">Play Again!</button>
 </body>
 </html>

@@ -10,7 +10,7 @@ You can play the game live by accessing the following link: https://layton-skidm
 
 
 ## Gameplay
-
+![Alt text](<Screenshot 1.png>)
 - The game starts with a single panel flashing.
 - The player must click the panels in the correct order to match the sequence.
 - If the player completes the sequence correctly, a new panel is added to the sequence.
@@ -20,7 +20,7 @@ You can play the game live by accessing the following link: https://layton-skidm
 - The player can choose to play again by clicking the "Play Again!" button.
 
 ## Features
-
+![Alt text](<Screenshot 2.png>)
 - Visually appealing interface with colorful panels and a dark, neon-lit theme.
 - Engaging sound 
 - Round counter to keep track of the player's progress.
