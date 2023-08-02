@@ -6,7 +6,7 @@ Simon is a classic memory game built with HTML, CSS, and JavaScript. The game pr
 
 ## Demo
 
-You can play the game live by accessing the following link: https://layton-s.github.io/. See if you can reach level 15!
+You can play the game live by accessing the following link: https://layton-skidmore.github.io/. See if you can reach level 15!
 
 
 ## Gameplay
